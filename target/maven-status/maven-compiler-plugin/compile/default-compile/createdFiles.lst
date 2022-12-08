@@ -1,0 +1,4 @@
+com/evertcode/phonebook/model/Phonebook.class
+com/evertcode/phonebook/repository/PhonebookRepository.class
+com/evertcode/phonebook/controller/PhonebookController.class
+com/evertcode/phonebook/PhonebookApplication.class

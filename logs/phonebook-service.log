@@ -1,0 +1,11 @@
+08-12-2022 11:51:34.119 [main] INFO  c.e.p.PhonebookApplicationTests - Starting PhonebookApplicationTests using Java 11.0.17 on PF-3JTDGC with PID 52742 (started by prav in /home/prav/CICD-Docker-Jenkins/Assignment2)
+08-12-2022 11:51:34.122 [main] INFO  c.e.p.PhonebookApplicationTests - No active profile set, falling back to default profiles: default
+08-12-2022 11:51:34.762 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08-12-2022 11:51:34.807 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+08-12-2022 11:51:36.285 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08-12-2022 11:51:36.543 [main] INFO  c.e.p.c.PhonebookController - Started service
+08-12-2022 11:51:36.717 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08-12-2022 11:51:36.910 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+08-12-2022 11:51:37.176 [main] INFO  c.e.p.PhonebookApplicationTests - Started PhonebookApplicationTests in 3.46 seconds (JVM running for 4.494)
+08-12-2022 11:51:37.312 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+08-12-2022 11:51:37.313 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
