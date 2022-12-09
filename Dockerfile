@@ -1,10 +1,11 @@
 FROM node:17-alpine
 WORKDIR /app
 COPY ReactNew/my-app/package.json ./
-COPY ReactNew/my-app/package-lock.json ./
-COPY ./ ./
-RUN npm i
-CMD ["npm", "run", "start"]
+COPY yarn.lock .
+RUN yarn install
+COPY . .
+RUN yarn build
+
 
 FROM nginx:1.19.0
 WORKDIR /user.share/nginx/html
