@@ -1,17 +1,25 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
+    agent any
+    stages{
+       
+        stage('build docker image'){
+            steps{
+                script{
+                    checkout([$class: 'GitSCM', branches: [[name: '*/Reactapp']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/veerprashant/CICD-Docker.git']]])
+                    withCredentials([string(credentialsId: 'dockerUser', variable: 'UserID')]){
+                    sh 'docker build -f Dockerfile -t ${UserID}/reactapp .'
+}
+                }
+            }
         }
-    }
-     environment {
-            CI = 'true'
-        }
-    stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
+        stage('push docker image to docker hub'){
+            steps{
+                script{
+                    withCredentials([string(credentialsId: 'dockerUser', variable: 'UserID'), string(credentialsId: 'dockerhub-pwd', variable: 'Password')]) {
+                    sh 'docker login -u ${UserID} -p ${Password}'
+                    sh 'docker push ${UserID}/reactapp'
+}
+                }
             }
         }
     }
