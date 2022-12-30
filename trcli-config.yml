@@ -1,5 +1,6 @@
-host: https://INSTANCE-NAME.testrail.io
-project: PROJECT NAME
-username: USERNAME
-password: PASSWORD
-title: Pytest Automated Test Run
+host: https://prashantveer.testrail.io
+project: SampleTestRail
+username: prashant.veer@zemosolabs.com
+password: Prashant@912
+title: Automation Test
+file: /home/prav/TestRailNew/junit-report.xml
