@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="PF-3JTDGC" name="pytest" skipped="0" tests="5" time="0.066" timestamp="2022-12-30T10:07:58.878543"><testcase classname="tests.test_subtraction" file="tests/test_subtraction.py" line="0" name="test_subtract_two_numbers" time="0.001"></testcase><testcase classname="tests.test_sum" file="tests/test_sum.py" line="3" name="test_sum_two_numbers" time="0.001"></testcase><testcase classname="tests.test_sum" file="tests/test_sum.py" line="7" name="test_sum_two_decimals" time="0.002"><properties><property name="testrail_attachment" value="sample_reports/testrail.jpg"/></properties><failure message="assert (0.8 + 0.3) == 1.2">record_property = &lt;function append_property at 0x7f2c11f53750&gt;
+
+    def test_sum_two_decimals(record_property):
+        record_property(&quot;testrail_attachment&quot;, &quot;sample_reports/testrail.jpg&quot;)
+&gt;       assert 0.8 + 0.3 == 1.2
+E       assert (0.8 + 0.3) == 1.2
+
+tests/test_sum.py:10: AssertionError</failure></testcase><testcase classname="tests.test_sum" file="tests/test_sum.py" line="12" name="test_sum_multiple_numbers[3+5-8]" time="0.001"></testcase><testcase classname="tests.test_sum" file="tests/test_sum.py" line="12" name="test_sum_multiple_numbers[2+4-6]" time="0.001"></testcase></testsuite></testsuites>
