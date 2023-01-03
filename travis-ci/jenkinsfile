@@ -1,0 +1,17 @@
+pipeline{
+      agent{dockerfile true}
+      stages{
+          stage('build'){
+             steps{
+                 sh 'python --version'
+             }
+          }
+          stage('test'){
+             steps{
+                 sh 'python3 calculator.py'
+                 sh 'echo "Testing Complete1";exit 0'
+                 }
+              }
+           }
+         }        
+           
