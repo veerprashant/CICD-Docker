@@ -1,8 +1,7 @@
-# TestRail API Webinar
-This repository includes example scripts from the Introduction to the TestRail API Webinar. 
+# Travis CI Example
 
-The travis-ci directory contains the Travis CI example from the webinar.
+Used with TestRail Integration
 
-The report-builder directory contains the script used to build the HTML report from the webinar; CSS not included.
+Intended for demonstration purposes.
 
-The ui-script directory includes UI scripts which can be implemented within TestRail to trigger a Travis CI build from TestRail.
+math.py retrieves input and expected results from TestRail then uses this data to perform tests against calculator.py, ultimately submitting these results back to TestRail in a new test run.
