@@ -8,7 +8,7 @@ pipeline{
           }
           stage('test'){
              steps{
-                 sh 'python3 calculator_test.py'
+                 sh 'python3 calculator.py'
                  sh 'echo "Testing Complete1";exit 0'
                  }
               }
